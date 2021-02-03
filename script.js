@@ -52,6 +52,7 @@ const messages= [
     }
 ]
 
+
 let i = 0
 let messageText = document.getElementById('message')
 let name = document.getElementById('name')
@@ -112,6 +113,8 @@ function speakGoogleAPI(text){
 }
 
 function getMessage(){
+    console.log('getmessages')
+
     if (i < messages.length){
         messageText.innerHTML = messages[i].text
         name.innerHTML = messages[i].name
@@ -146,6 +149,8 @@ function getMessage(){
             newText.style.backgroundColor = "#4A01B3"
         }
         messageContainer.appendChild(newText)
+
+
 
         messageContainer.style.marginBottom = "20px"
 
